@@ -11,10 +11,11 @@
     --cor3: #02735E;
     --cor4: #038C3E;
     --cor5: #0CF25D; /*cor principal*/
+    --cor6: #fff;
 }
 
 body{
-    background-color: #0CF25D;
+    background-color:var(--cor3);
     font-family: "Lato";
     height: 100vh;
 }
@@ -26,12 +27,207 @@ header{
     gap: 1erm;
     flex-wrap: wrap;
     padding: .8rem;
-    background-color: var(--cor1);
+    background-color: var(--cor2);
     min-height: 50px;
+}
+
+
+.box-img{
+    height: 100%;
+}
+
+.img-logomarca{
+    max-width: 60px;
+    height: 100%;
+}
+nav{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .nav-links{
     text-decoration: none;
     color: var(--cor5);
 }
+
+.nav-links:hover{
+    color: var(--dark4);
+    transition: .4s;
+    text-decoration: underline;
+}
+
+/* Container dos botões */
+.box-btn-actions{
+    display: flex;
+    gap: 1rem; /* Espaço entre botões */
+}
+
+/* Estilo geral para botões e links com aparência de botão */
+button, .link-action{
+    padding: .6rem; /* Espaçamento interno */
+    font-size: .9rem; /* Tamanho da fonte */
+    border-radius: 6px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de clique */
+    transition: .4s; /* Animação suave */
+    text-decoration: none; /* Remove sublinhado */
+    width: 200px; /* Largura fixa */
+    text-align: center; /* Centraliza texto */
+}
+
+/* Botão principal */
+.btn-actions{
+    background-color: transparent; /* Fundo transparente */
+    border: 1px solid var(--cor5); /* Borda branca */
+    color: var(--cor5); /* Texto branco */
+    width: 100px; /* Largura fixa */
+}
+
+/* Efeito hover do botão */
+.btn-actions:hover{
+    background-color: var(--cor2); /* Muda fundo */
+    border: 1px solid var(--cor2); /* Muda borda */
+}
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+section{
+    padding: 4rem;
+}
+.first-section{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 600px;
+}
+.first-section > div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 300px;
+}
+h1{
+    font-size: 2rem;
+    color: var(--white);
+    letter-spacing: 8px;
+}
+
+strong{
+    color: var(--cor6);
+}
+
+.first-section p{
+    color: var(--white);
+}
+
+.box-img-main{
+    max-width: 450px;
+    padding: 1rem;
+}
+
+.img-logomarca{
+    border-radius: 50%;
+    width: 100%;
+}
+
+.second-section, .fourth-section{
+    background-color: var(--cor2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.second-section ul{
+    list-style: none; /* Remove marcadores */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Itens da lista */
+.second-section ul li{
+    color: var(--cor5);
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+/* Hover nos itens */
+.second-section ul li:hover{
+    color: var(--cor3);
+    transition: .4s;
+    cursor: default;
+}
+
+/* Título de seção */
+.title{
+    color: var(--cor5);
+}
+
+.third-section{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.third-section> div{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.third-section> div img{
+    width: 500px;
+    border-radius: 10px;
+}
+
+.third-section> div p{
+    max-width: 600px;
+    color: #fff;
+    text-align: justify;
+}
+
+.third-section> h2{
+    text-align: center;
+}
+
+#loading{
+    color: var(--cor5);
+}
+
+
+h2{
+    text-align: center;
+}
+
+footer{
+    display: flex;
+    padding: 4rem;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+footer> div{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+
 
